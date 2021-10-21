@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import {corPrimaria} from "../../variaveis"
+import {corPrimaria} from "./variaveis"
 
 export const Icone = styled.img`
 height: 25px;
