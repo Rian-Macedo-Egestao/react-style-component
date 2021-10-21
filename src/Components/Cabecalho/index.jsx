@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import bank_logo from "../../assets/images/bank_logo.svg";
-import {corPrimaria} from "../../assets/UI/variaveis"
+import {corPrimaria} from "../../variaveis"
 
 const StyleHeader = styled.nav`
   background-color: ${corPrimaria};
@@ -24,11 +24,15 @@ const BtnCabecalho =styled.a`
   color: ${(props) => props.primary ? corPrimaria : "white"};
 `
 
+const Logo = styled.img`
+height: 50px;
+width: 50px;
+`
 
 const Cabecalho = () => {
   return (
     <StyleHeader>
-      <img className="imagem-logo" src={bank_logo} alt="Logo Smart Bank" />
+      <Logo src={bank_logo} alt="Logo Smart Bank" />
       <div>
         <BtnCabecalho primary href="https://google.com">
           Ajuda
